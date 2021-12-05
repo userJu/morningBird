@@ -1,0 +1,24 @@
+:root {
+}
+
+/* 기본 셋팅 */
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/* Header */
+#header {
+  display: flex;
+  flex-direction: column;
+  margin: 7rem 3rem;
+  text-align: center;
+}
+#header h1,
+h2 {
+  margin: 10rem;
+}
