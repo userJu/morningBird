@@ -23,7 +23,8 @@ window.addEventListener("scroll", () => {
     sun.classList.add("sunrise");
     const sunHeight =
       ((window.scrollY - outtro.offsetTop) / outtro.offsetHeight) * 100;
-    sun.style.bottom = `${-30 + sunHeight}%`;
+    sun.style.bottom = `${sunHeight}%`;
+    console.log(sunHeight);
   } else {
     sun.classList.remove("sunrise");
   }
