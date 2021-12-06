@@ -34,6 +34,17 @@ button {
   background-color: transparent;
   font-family: "GmarketSansBold";
 }
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 
 /* Header */
 #header {
@@ -69,12 +80,13 @@ h2 {
 }
 .header_choose button {
   padding: 20px;
-  background-color: #dcdde2;
   margin: 20px;
   border-radius: 4px;
+  background-color: rgb(240, 200, 207);
+  color: snow;
 }
 .yesBtn:hover {
-  background-color: #b7ced2;
+  background-color: powderblue;
 }
 .noBtn:hover {
   opacity: 0;
@@ -82,7 +94,7 @@ h2 {
 
 /* HIDE */
 .hide {
-  display: none;
+  /* display: none; */
 }
 
 /* Intro */
@@ -190,6 +202,47 @@ h2 {
   left: -5px;
 }
 
+/* footer */
+#footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.footer_name {
+  margin: 80px;
+}
+.footer_links {
+  display: flex;
+  flex-direction: row;
+}
+.footer_links li {
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_links i {
+  font-size: 30px;
+}
+
+.github h3,
+.join h3 {
+  opacity: 0;
+  margin-top: 3px;
+  color: pink;
+}
+.github:hover,
+.join:hover {
+  color: pink;
+}
+.github:hover.github h3,
+.join:hover.join h3 {
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 20px;
@@ -205,7 +258,6 @@ h2 {
   }
   .header_choose button {
     padding: 10px;
-    background-color: #dcdde2;
     margin: 10px;
     border-radius: 4px;
   }
