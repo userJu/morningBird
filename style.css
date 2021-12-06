@@ -82,7 +82,7 @@ h2 {
 
 /* HIDE */
 .hide {
-  /* display: none; */
+  display: none;
 }
 
 /* Intro */
@@ -169,7 +169,7 @@ h2 {
   transition: all 1000ms linear;
 }
 .sunrise {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 /* Outtro */
@@ -202,5 +202,11 @@ h2 {
   }
   button {
     font-size: 10px;
+  }
+  .header_choose button {
+    padding: 10px;
+    background-color: #dcdde2;
+    margin: 10px;
+    border-radius: 4px;
   }
 }
