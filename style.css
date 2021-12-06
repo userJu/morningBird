@@ -1,24 +1,205 @@
-:root {
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* 기본 셋팅 */
 body {
   margin: 0;
+  background-color: rgba(148, 187, 233, 1);
+  font-family: "GmarketSansBold";
+  overflow-x: hidden;
 }
 h1,
 h2,
 h3 {
   margin: 0;
+  cursor: default;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "GmarketSansBold";
 }
 
 /* Header */
 #header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 7rem 3rem;
-  text-align: center;
 }
 #header h1,
 h2 {
-  margin: 10rem;
+  margin: 10rem 0;
+}
+
+.header_letter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_img {
+  width: 60vw;
+}
+.header_click {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header_choose {
+  display: flex;
+  justify-content: center;
+}
+.header_choose button {
+  padding: 20px;
+  background-color: #dcdde2;
+  margin: 20px;
+  border-radius: 4px;
+}
+.yesBtn:hover {
+  background-color: #b7ced2;
+}
+.noBtn:hover {
+  opacity: 0;
+}
+
+/* HIDE */
+.hide {
+  /* display: none; */
+}
+
+/* Intro */
+#intro {
+  width: 100vw;
+  height: 400vh;
+  overflow-x: hidden;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(148, 187, 233, 1) 84%
+  );
+}
+.intro_bgs {
+  position: absolute;
+}
+.intro_bg {
+  width: 500px;
+}
+.bg1,
+.bg2 {
+  width: 50vw;
+  position: sticky;
+  top: 0;
+  left: 50vw;
+  transform: translate(-50%);
+}
+
+.bg2 {
+  opacity: 0;
+}
+.intro_desc {
+  width: 100vw;
+  text-align: center;
+  color: white;
+  position: absolute;
+}
+.intro_desc h3 {
+  margin-top: 60vh;
+}
+
+/* Main */
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 3rem;
+}
+
+.main_intro {
+  margin: 4rem 0;
+  text-align: center;
+}
+.main_curtains {
+  width: 100vw;
+  height: 4rem;
+  position: relative;
+  text-align: center;
+}
+.main_curtain {
+  width: 100vw;
+  height: 4rem;
+  background-color: rgba(148, 187, 233, 1);
+  position: absolute;
+}
+.main_name {
+  color: black;
+}
+
+.main_desc h3 {
+  margin: 10rem 0;
+  text-align: center;
+}
+
+.sun {
+  position: fixed;
+  bottom: -30%;
+  left: 50vw;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1000ms linear;
+}
+.sunrise {
+  opacity: 1;
+}
+
+/* Outtro */
+#outtro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 3rem;
+}
+
+.cursor {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: snow;
+  position: fixed;
+  top: -5px;
+  left: -5px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  button {
+    font-size: 10px;
+  }
 }
